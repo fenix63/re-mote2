@@ -1,0 +1,35 @@
+.socials {
+    height: 50px;
+    width: 150px;
+    float: right;
+    margin-top: 21px;
+    
+
+
+  &__item {
+    height: 50px;
+    position: absolute;
+    
+    &--fb {
+      width: 50px;
+      height: 50px;
+      right: 60px;
+      background: url('../img/socials__item_fb.png') no-repeat;
+
+      &:hover{
+        background: url('../img/socials__item_fb_hover.png') no-repeat;
+      }
+    }
+    
+    &--tw {
+        width: 50px;
+        height: 50px;
+        right: 0;
+        background: url('../img/socials__item-twitter.png') no-repeat;
+
+        &:hover{
+          background: url('../img/socials__item-twitter_hover.png') no-repeat;
+        }
+    }
+  }
+}
