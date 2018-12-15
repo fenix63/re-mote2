@@ -14,6 +14,16 @@ body {
 .galery {
     &__item {
         height: 200px;
+        
+    }
+}
+
+
+a.picture{
+    div {
+        background: url('../img/picture.png') no-repeat;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -74,7 +84,19 @@ body {
         }
     }
 
+    
+
+
+}
+
+
+@include media-breakpoint-down(xs){
+    .footer__link{
+        font-size: 15px !important;
+        padding-left: 15px !important;
+    } 
+
     .d-flex:nth-child(2){
         margin-top: 30px;
-    }   
+    }
 }

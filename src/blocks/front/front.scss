@@ -2,7 +2,21 @@
     height: 900px;  
   /* Пример медиа-запроса. Подробнее здесь: https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints */
     background: url('../img/front__bg.png') no-repeat;
+    position: relative;
     
+    .container{
+      position: relative;
+      z-index: 1;
+    }
+
+    .mask{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left:0;
+      background: rgba(255, 255, 255, 0.5);
+    }
 
   @include media-breakpoint-down(md) {
 //    min-height: 0;

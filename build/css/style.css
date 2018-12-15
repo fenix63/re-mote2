@@ -7802,6 +7802,11 @@ input[type="submit"] {
 .galery__item {
   height: 200px; }
 
+a.picture div {
+  background: url("../img/picture.png") no-repeat;
+  width: 100%;
+  height: 100%; }
+
 .slick-dots {
   padding-left: -webkit-calc(50% - 22px);
   padding-left: calc(50% - 22px); }
@@ -7836,7 +7841,12 @@ input[type="submit"] {
   .galery .galery__item {
     margin-top: 20px; }
     .galery .galery__item:first-child {
-      margin-top: 0; }
+      margin-top: 0; } }
+
+@media (max-width: 575.98px) {
+  .footer__link {
+    font-size: 15px !important;
+    padding-left: 15px !important; }
   .d-flex:nth-child(2) {
     margin-top: 30px; } }
 
@@ -7862,12 +7872,24 @@ input[type="submit"] {
   line-height: 50px;
   margin-top: 10px; }
   .button:hover {
-    color: #fff; }
+    color: #fff;
+    background: #EA555D; }
 
 .front {
   height: 900px;
   /* Пример медиа-запроса. Подробнее здесь: https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints */
-  background: url("../img/front__bg.png") no-repeat; }
+  background: url("../img/front__bg.png") no-repeat;
+  position: relative; }
+  .front .container {
+    position: relative;
+    z-index: 1; }
+  .front .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5); }
   .front__content {
     line-height: 101px;
     height: 101px; }
